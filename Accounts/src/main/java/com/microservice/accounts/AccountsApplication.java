@@ -1,3 +1,4 @@
+
 package com.microservice.accounts;
 
 import org.springframework.boot.SpringApplication;
@@ -13,3 +14,4 @@ public class AccountsApplication {
 	}
 
 }
+
