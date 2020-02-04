@@ -101,7 +101,6 @@ public class UsersServiceImpl implements UsersService {
 				null, new ParameterizedTypeReference<List<AlbumResponseModel>>() {
 				});
 		List<AlbumResponseModel> albumsList = albumsListResponse.getBody();
-
 //        logger.info("Before calling albums Microservice");
 //        List<AlbumResponseModel> albumsList = albumsServiceClient.getAlbums(userId);
 //        logger.info("After calling albums Microservice");
