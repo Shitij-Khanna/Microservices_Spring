@@ -11,4 +11,8 @@ import java.util.List;
 
 public interface AlbumsService {
     List<AlbumEntity> getAlbums(String userId);
+
+	List<AlbumEntity> getAlbums();
+
+	int calculateSum(int[] data);
 }
