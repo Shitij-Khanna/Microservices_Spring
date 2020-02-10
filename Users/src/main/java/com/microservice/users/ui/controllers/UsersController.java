@@ -16,8 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.microservice.users.UserBooksFeignClient;
 import com.microservice.users.service.UsersService;
 import com.microservice.users.shared.UserDto;
+import com.microservice.users.ui.model.Book;
 import com.microservice.users.ui.model.CreateUserRequestModel;
 import com.microservice.users.ui.model.CreateUserResponseModel;
 import com.microservice.users.ui.model.UserResponseModel;
@@ -30,12 +32,17 @@ public class UsersController {
 	private Environment env;
 
 	@Autowired
+	private UserBooksFeignClient booksClient;
+
+	@Autowired
 	UsersService usersService;
 
 	@GetMapping("/status/check")
 	public String status() {
 //		return "Working on port " + env.getProperty("local.server.port");
-		return "Working";
+		String test = booksClient.test();
+		System.out.println("Testing feign client : " + booksClient.test());
+		return "Working" + test;
 	}
 
 	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
@@ -51,13 +58,19 @@ public class UsersController {
 	}
 // Headers :	[{"key":"Content-Type","value":"application/json","description":""},{"key":"Accept","value":"application/json","description":""}]
 
-	
-	  @GetMapping(value="/{userId}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
-	    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
-	       
-	        UserDto userDto = usersService.getUserByUserId(userId); 
-	        UserResponseModel returnValue = new ModelMapper().map(userDto, UserResponseModel.class);
-	        
-	        return ResponseEntity.status(HttpStatus.OK).body(returnValue);
-	    }
+	@GetMapping(value = "/{userId}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
+	public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
+
+		UserDto userDto = usersService.getUserByUserId(userId);
+		UserResponseModel returnValue = new ModelMapper().map(userDto, UserResponseModel.class);
+
+		return ResponseEntity.status(HttpStatus.OK).body(returnValue);
+	}
+
+	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
+			MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
+	public String addBookForUser(@RequestBody Book book) {
+		String addedConfirmation = booksClient.saveBook(book);
+		return addedConfirmation;
+	}
 }
