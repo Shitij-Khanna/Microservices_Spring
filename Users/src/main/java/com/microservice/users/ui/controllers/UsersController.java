@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.microservice.users.UserBooksFeignClient;
@@ -40,7 +41,7 @@ public class UsersController {
 	@GetMapping("/status/check")
 	public String status() {
 //		return "Working on port " + env.getProperty("local.server.port");
-//		String test = booksClient.test();
+		String test = booksClient.test();
 		System.out.println("Testing feign client : " );
 		return "Working" ;
 	}

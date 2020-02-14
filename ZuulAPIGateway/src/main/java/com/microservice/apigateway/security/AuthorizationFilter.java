@@ -13,7 +13,6 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
-import org.springframework.stereotype.Component;
 
 import io.jsonwebtoken.Jwts;
 
@@ -49,8 +48,7 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
         String authorizationHeader = req.getHeader(environment.getProperty("authorization.token.header.name"));
    
          if (authorizationHeader == null) {
-        	 return null;
-        	 //return new UsernamePasswordAuthenticationToken("123", null, new ArrayList<>());
+             return null;
          }
 
          String token = authorizationHeader.replace(environment.getProperty("authorization.token.header.prefix"), "");
@@ -64,6 +62,8 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
          if (userId == null) {
              return null;
          }
+         // Check if the userid exists in DB, also check that the token has not expired.
+         // Add more validations as per requirement
    
          return new UsernamePasswordAuthenticationToken(userId, null, new ArrayList<>());
 
