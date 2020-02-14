@@ -9,23 +9,15 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
-import com.microservice.apigateway.config.JwtConfig;
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurity extends WebSecurityConfigurerAdapter {
 
     private final Environment environment;
-    
-    private AuthorizationFilter authorizationFilter;
-    
-    @Autowired
-  	private JwtConfig jwtConfig;
 
     @Autowired
-    public WebSecurity(Environment environment, AuthorizationFilter authorizationFilter) {
+    public WebSecurity(Environment environment) {
         this.environment = environment;
-        this.authorizationFilter = authorizationFilter;
     }
 	
     @Override
@@ -34,15 +26,17 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
     	http.csrf().disable(); 
     	http.headers().frameOptions().disable();
     	http.authorizeRequests()
+//    	.antMatchers(environment.getProperty("api.users.actuator.url.path")).permitAll()
+//    	.antMatchers(environment.getProperty("api.zuul.actuator.url.path")).permitAll()
+    	.antMatchers(environment.getProperty("api.h2console.url.path")).permitAll()
     	.antMatchers(HttpMethod.POST, environment.getProperty("api.registration.url.path")).permitAll()
-    	.antMatchers(HttpMethod.POST, environment.getProperty("api.login.url.path")).permitAll().
-    	antMatchers(HttpMethod.GET, environment.getProperty("api.users.status.check.path")).permitAll()
+    	.antMatchers(HttpMethod.POST, environment.getProperty("api.login.url.path")).permitAll()
     	.anyRequest().authenticated()
     	.and()
     	.addFilter(new AuthorizationFilter(authenticationManager(), environment));
     	
     	http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-//    	http.addFilterBefore(authorizationFilter, BasicAuthenticationFilter.class);
+    	
     }	
 	
 }
