@@ -24,7 +24,7 @@ public class BooksServiceImpl implements BooksService {
 	}
 
 	@Override
-	@Cacheable
+	@Cacheable("bookForUser")
 	public List<Book> findByUser(String userID) {
 		return bookRepository.findByUserID(userID);
 	}

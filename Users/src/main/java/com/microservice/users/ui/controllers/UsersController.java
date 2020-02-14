@@ -40,9 +40,9 @@ public class UsersController {
 	@GetMapping("/status/check")
 	public String status() {
 //		return "Working on port " + env.getProperty("local.server.port");
-		String test = booksClient.test();
-		System.out.println("Testing feign client : " + booksClient.test());
-		return "Working" + test;
+//		String test = booksClient.test();
+		System.out.println("Testing feign client : " );
+		return "Working" ;
 	}
 
 	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
@@ -67,10 +67,10 @@ public class UsersController {
 		return ResponseEntity.status(HttpStatus.OK).body(returnValue);
 	}
 
-	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
-			MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
-	public String addBookForUser(@RequestBody Book book) {
-		String addedConfirmation = booksClient.saveBook(book);
-		return addedConfirmation;
-	}
+//	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
+//			MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
+//	public String addBookForUser(@RequestBody Book book) {
+//		String addedConfirmation = booksClient.saveBook(book);
+//		return addedConfirmation;
+//	}
 }
