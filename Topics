@@ -19,6 +19,7 @@ Spring boot, spring aop, spring mvc(use of thymeleaf), spring core, spring data 
 REst, spring rest, API contract, annotations, logging, error handling, secure web services, consume web services, time out.. entitlement on rest APIs
 API versioning
 Micro services
+Security Authentication - Symmetric and Asymetric
 
 HIbernate (optional, else Spring Data JPA)
 
