@@ -1,0 +1,44 @@
+OOPS principles with examples
+
+SOLID Principles
+
+Design Patterns (3-4 in each category (behavioural, creational and structural) with implementation )
+
+Sorting (quick and heap sort) and Searching(binary search) algos
+
+Core java
+java 8
+Concurrency package:
+Multi threading in details how to create ur own things like threadpool thread local, producer consumer problem using locks, wait notify or blocking queue
+countdown latch , cyclic barrier, future condition, how to avoid deadlock
+Collections and concurrent collections. where and which collection to use, explain with project examples. internal implementation of all the collections
+
+JMS (rabbit mq or active mq or kafka)
+
+Spring boot, spring aop, spring mvc(use of thymeleaf), spring core, spring data jpa, DI, caching etc
+REst, spring rest, API contract, annotations, logging, error handling, secure web services, consume web services, time out.. entitlement on rest APIs
+API versioning
+Micro services
+
+HIbernate (optional, else Spring Data JPA)
+
+Monitoring and auditing tools like new relic
+
+Caching - redis or memcache or any other
+
+Performance testing - Jmeter or any other tools
+Selenuim / Cucumber
+
+Unit testing - junit and mockito.
+
+Database - RDBMS, normalization, transaction management, joins,  group by, query optimization, indexes, procedures if time permits. how do you push databse change on PROD?
+Database - NoSQL database, concept. how it is diff from RDBMS. 
+
+Docker 
+
+Cloud..
+
+Build and deployment (CI and CD Pipelines)
+
+How do you take care of the things on prodcution if something fails..
+
