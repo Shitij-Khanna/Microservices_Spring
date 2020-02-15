@@ -1,5 +1,13 @@
 package com.appsdeveloperblog.api.books.io.controllers;
 
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.hamcrest.CoreMatchers.endsWith;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.CoreMatchers.startsWith;
+import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.lessThan;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -11,6 +19,10 @@ import java.util.List;
 
 import javax.ws.rs.core.MediaType;
 
+import org.aopalliance.intercept.Joinpoint;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.hamcrest.Matchers;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,11 +30,14 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.JsonPathResultMatchers;
 
 import com.appsdeveloperblog.api.books.data.Book;
 import com.appsdeveloperblog.api.books.service.BooksService;
@@ -101,6 +116,12 @@ public class BooksControllerTest {
 						+ "        \"bookName\": \"Ghost stories2 \",\r\n" + "        \"authorName\": \"ghost\",\r\n"
 						+ "        \"userID\": \"1\"\r\n" + "    }\r\n" + "]"))
 				.andReturn();
+		JsonPathResultMatchers a = jsonPath("$[?(@.id)]");
+		System.out.println(a);
+		mockMVC.perform(request).andExpect(status().isOk())
+		 .andExpect(jsonPath("$", hasSize(2)))
+		 .andExpect(jsonPath("$[?(@.id)]", greaterThan(0)));
+		
 	}
 
 	@Test
@@ -110,22 +131,22 @@ public class BooksControllerTest {
 		list.add(26);
 		list.add(34);
 		list.add(49);
-		org.hamcrest.MatcherAssert.assertThat(list, org.hamcrest.Matchers.hasSize(4));
-		org.hamcrest.MatcherAssert.assertThat(list, org.hamcrest.Matchers.hasItem(26));
+		org.hamcrest.MatcherAssert.assertThat(list, hasSize(4));
+		org.hamcrest.MatcherAssert.assertThat(list, hasItem(26));
 		org.hamcrest.MatcherAssert.assertThat(list,
-				org.hamcrest.Matchers.everyItem(org.hamcrest.Matchers.greaterThan(9)));
+				org.hamcrest.Matchers.everyItem(greaterThan(9)));
 		org.hamcrest.MatcherAssert.assertThat(list,
-				org.hamcrest.Matchers.everyItem(org.hamcrest.Matchers.lessThan(70)));
+				org.hamcrest.Matchers.everyItem(lessThan(70)));
 
-		org.hamcrest.MatcherAssert.assertThat("Shitij", org.hamcrest.Matchers.startsWith("Shit"));
+		org.hamcrest.MatcherAssert.assertThat("Shitij", startsWith("Shit"));
 
-		org.hamcrest.MatcherAssert.assertThat("Shitij", org.hamcrest.Matchers.endsWith("ij"));
+		org.hamcrest.MatcherAssert.assertThat("Shitij", endsWith("ij"));
 
-		org.hamcrest.MatcherAssert.assertThat("Shitij", org.hamcrest.Matchers.containsString("Shit"));
+		org.hamcrest.MatcherAssert.assertThat("Shitij", containsString("Shit"));
 
-		org.hamcrest.MatcherAssert.assertThat("Shitij", org.hamcrest.Matchers.notNullValue());
+		org.hamcrest.MatcherAssert.assertThat("Shitij", notNullValue());
 
-		org.hamcrest.MatcherAssert.assertThat("Shitij", org.hamcrest.Matchers.notNullValue());
+		org.hamcrest.MatcherAssert.assertThat("Shitij", notNullValue());
 
 	}
 
@@ -144,5 +165,5 @@ public class BooksControllerTest {
 				.endsWith("tij").doesNotContain("Moti");
 
 	}
-
+	
 }
