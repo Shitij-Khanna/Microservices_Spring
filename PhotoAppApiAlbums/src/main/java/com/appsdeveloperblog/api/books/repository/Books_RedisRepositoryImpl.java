@@ -11,6 +11,10 @@ import org.springframework.stereotype.Repository;
 
 import com.appsdeveloperblog.api.books.data.Book;
 
+/**
+ * @author nlshikha Docker command to pull and run redis docker run -it -p
+ *         6379:6379 redis
+ */
 @Repository
 public class Books_RedisRepositoryImpl implements Books_RedisRepository {
 
@@ -21,7 +25,6 @@ public class Books_RedisRepositoryImpl implements Books_RedisRepository {
 		this.redisTemplate = redisTemplate;
 		hashOperations = redisTemplate.opsForHash();
 	}
-	
 
 	private static final String KEY_BOOKS_CACHE = "BOOKS";
 

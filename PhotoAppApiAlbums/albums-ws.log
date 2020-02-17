@@ -4958,3 +4958,304 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2020-02-17 20:16:04.821  WARN 3508 --- [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
 2020-02-17 20:16:04.821  INFO 3508 --- [container-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@401034b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
 2020-02-17 20:16:04.823  INFO 3508 --- [container-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:08.831 ERROR 3508 --- [container-3] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1984) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1958) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1938) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:403) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1730) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1711) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1195) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1041) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994) ~[amqp-client-5.4.3.jar:5.4.3]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 11 common frames omitted
+
+2020-02-17 20:16:08.831  INFO 3508 --- [container-3] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:17.872  WARN 3508 --- [container-3] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2020-02-17 20:16:17.872  INFO 3508 --- [container-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@861f497: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2020-02-17 20:16:17.872  INFO 3508 --- [container-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:21.889 ERROR 3508 --- [container-4] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1984) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1958) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1938) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:403) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1730) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1711) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1195) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1041) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994) ~[amqp-client-5.4.3.jar:5.4.3]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 11 common frames omitted
+
+2020-02-17 20:16:21.889  INFO 3508 --- [container-4] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:30.919  WARN 3508 --- [container-4] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2020-02-17 20:16:30.919  INFO 3508 --- [container-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@7563ebf7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2020-02-17 20:16:30.920  INFO 3508 --- [container-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:34.937 ERROR 3508 --- [container-5] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1984) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1958) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1938) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:403) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1730) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1711) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1195) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1041) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994) ~[amqp-client-5.4.3.jar:5.4.3]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 11 common frames omitted
+
+2020-02-17 20:16:34.937  INFO 3508 --- [container-5] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:43.957  WARN 3508 --- [container-5] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+2020-02-17 20:16:43.957  INFO 3508 --- [container-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5fd6dae5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2020-02-17 20:16:43.957  INFO 3508 --- [container-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:47.976 ERROR 3508 --- [container-6] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1984) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1958) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1938) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:403) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1730) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1711) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1195) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1041) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994) ~[amqp-client-5.4.3.jar:5.4.3]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 11 common frames omitted
+
+2020-02-17 20:16:47.977  INFO 3508 --- [container-6] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:16:51.066  INFO 3508 --- [Thread-14] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BOOKS-WS with eureka with status DOWN
+2020-02-17 20:16:51.067  WARN 3508 --- [Thread-14] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1581967011067, current=DOWN, previous=UP]
+2020-02-17 20:16:51.067  INFO 3508 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOKS-WS/books-ws:be4be2cbff5eb61a8936d4ff52a52af8: registering service...
+2020-02-17 20:16:51.069  INFO 3508 --- [Thread-14] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-02-17 20:16:51.069  INFO 3508 --- [Thread-14] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-02-17 20:16:51.073  INFO 3508 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOKS-WS/books-ws:be4be2cbff5eb61a8936d4ff52a52af8 - registration status: 204
+2020-02-17 20:16:51.074  INFO 3508 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-17 20:16:51.074  INFO 3508 --- [Thread-14] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is not active already
+2020-02-17 20:16:52.000  INFO 3508 --- [Thread-14] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-02-17 20:16:55.003  INFO 3508 --- [Thread-14] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-02-17 20:16:55.009  INFO 3508 --- [Thread-14] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOKS-WS/books-ws:be4be2cbff5eb61a8936d4ff52a52af8 - deregister  status: 200
+2020-02-17 20:16:55.020  INFO 3508 --- [Thread-14] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-02-17 20:16:56.878  INFO 3508 --- [restartedMain] c.a.api.books.BooksApplication           : No active profile set, falling back to default profiles: default
+2020-02-17 20:16:57.397  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-17 20:16:57.397  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-17 20:16:57.409  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 1 repository interfaces.
+2020-02-17 20:16:57.410  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-17 20:16:57.411  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-17 20:16:57.415  INFO 3508 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsdeveloperblog.api.books.repository.BookRepository.
+2020-02-17 20:16:57.415  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2020-02-17 20:16:57.478  INFO 3508 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5eeb2963-52c6-3acf-9f71-080f2c70536b
+2020-02-17 20:16:57.487  INFO 3508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$eb033dc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-17 20:16:57.508  INFO 3508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$40b18296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-17 20:16:57.656  INFO 3508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-02-17 20:16:57.657  INFO 3508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-17 20:16:57.658  INFO 3508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-02-17 20:16:57.675  INFO 3508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-17 20:16:57.675  INFO 3508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 794 ms
+2020-02-17 20:16:57.838  INFO 3508 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-17 20:16:57.839  INFO 3508 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-02-17 20:16:57.842  INFO 3508 --- [cluster-ClusterId{value='5e4ae6a920e56b0db4b9674a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:12}] to localhost:27017
+2020-02-17 20:16:57.844  INFO 3508 --- [cluster-ClusterId{value='5e4ae6a920e56b0db4b9674a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 12]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=492300}
+2020-02-17 20:16:57.845  INFO 3508 --- [cluster-ClusterId{value='5e4ae6a920e56b0db4b9674a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-02-17 20:16:58.623  WARN 3508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-02-17 20:17:01.304  WARN 3508 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-02-17 20:17:01.305  INFO 3508 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-02-17 20:17:01.416  INFO 3508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-17 20:17:02.300  INFO 3508 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-02-17 20:17:02.345  INFO 3508 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:17:06.362  INFO 3508 --- [restartedMain] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start
+2020-02-17 20:17:06.364  INFO 3508 --- [container-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:17:09.634  INFO 3508 --- [restartedMain] c.a.api.books.BooksApplication           : No active profile set, falling back to default profiles: default
+2020-02-17 20:17:10.074  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-17 20:17:10.074  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-17 20:17:10.087  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 1 repository interfaces.
+2020-02-17 20:17:10.088  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-02-17 20:17:10.088  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-02-17 20:17:10.093  INFO 3508 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.appsdeveloperblog.api.books.repository.BookRepository.
+2020-02-17 20:17:10.093  INFO 3508 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2020-02-17 20:17:10.157  INFO 3508 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5eeb2963-52c6-3acf-9f71-080f2c70536b
+2020-02-17 20:17:10.167  INFO 3508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$eb033dc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-17 20:17:10.189  INFO 3508 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$40b18296] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-17 20:17:10.364  INFO 3508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-02-17 20:17:10.365  INFO 3508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-17 20:17:10.365  INFO 3508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2020-02-17 20:17:10.382 ERROR 3508 --- [container-1] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:62) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:509) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:682) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:214) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:1984) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1958) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:1938) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:403) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1730) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1711) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1195) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1041) [spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1102) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1054) ~[amqp-client-5.4.3.jar:5.4.3]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:994) ~[amqp-client-5.4.3.jar:5.4.3]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:462) ~[spring-rabbit-2.1.3.RELEASE.jar:2.1.3.RELEASE]
+	... 11 common frames omitted
+
+2020-02-17 20:17:10.383  INFO 3508 --- [container-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-02-17 20:17:10.385  INFO 3508 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-02-17 20:17:10.386  INFO 3508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 748 ms
+2020-02-17 20:17:10.514  INFO 3508 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-02-17 20:17:10.514  INFO 3508 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-02-17 20:17:10.517  INFO 3508 --- [cluster-ClusterId{value='5e4ae6b620e56b0db4b9674b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:13}] to localhost:27017
+2020-02-17 20:17:10.518  INFO 3508 --- [cluster-ClusterId{value='5e4ae6b620e56b0db4b9674b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 12]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=381700}
+2020-02-17 20:17:10.519  INFO 3508 --- [cluster-ClusterId{value='5e4ae6b620e56b0db4b9674b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-02-17 20:17:11.259  WARN 3508 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+2020-02-17 20:17:11.261  INFO 3508 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-02-17 20:17:11.272  INFO 3508 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-17 20:17:11.279 ERROR 3508 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springApplicationAdminRegistrar' defined in class path resource [org/springframework/boot/autoconfigure/admin/SpringApplicationAdminJmxAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1745) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:576) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:239) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:196) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.registerListeners(AbstractApplicationContext.java:826) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at com.appsdeveloperblog.api.books.BooksApplication.main(BooksApplication.java:21) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_162]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Admin,name=SpringApplication
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Unknown Source) ~[na:1.8.0_162]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(Unknown Source) ~[na:1.8.0_162]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(Unknown Source) ~[na:1.8.0_162]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(Unknown Source) ~[na:1.8.0_162]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(Unknown Source) ~[na:1.8.0_162]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(Unknown Source) ~[na:1.8.0_162]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar.afterPropertiesSet(SpringApplicationAdminMXBeanRegistrar.java:132) ~[spring-boot-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1741) ~[spring-beans-5.1.4.RELEASE.jar:5.1.4.RELEASE]
+	... 24 common frames omitted
+
+2020-02-17 20:17:14.412  INFO 3508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57617 (http) with context path ''
+2020-02-17 20:17:14.413  INFO 3508 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 57617
+2020-02-17 20:17:14.416  INFO 3508 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-02-17 20:17:14.422  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-02-17 20:17:14.426  INFO 3508 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-02-17 20:17:14.432  INFO 3508 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-02-17 20:17:14.432  INFO 3508 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-02-17 20:17:14.432  INFO 3508 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-02-17 20:17:14.535  INFO 3508 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-02-17 20:17:14.536  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-02-17 20:17:14.541  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-02-17 20:17:14.542  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-02-17 20:17:14.543  INFO 3508 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-02-17 20:17:14.544  INFO 3508 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1581967034544 with initial instances count: 2
