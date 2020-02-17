@@ -1,11 +1,18 @@
 package com.appsdeveloperblog.api.books.data;
 
+import java.io.Serializable;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "Book")
-public class Book {
+public class Book implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8035771449933976388L;
 
 	@Id
 	private int id;
