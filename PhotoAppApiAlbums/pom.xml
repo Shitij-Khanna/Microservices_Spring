@@ -9,10 +9,10 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.appsdeveloperblog.photoapp.api.albums</groupId>
-	<artifactId>PhotoAppApiAlbums</artifactId>
+	<groupId>com.appsdeveloperblog.api.books</groupId>
+	<artifactId>UsersBooksService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>PhotoAppApiAlbums</name>
+	<name>UsersBooksService</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -87,6 +87,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
 			<version>2.2.4.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>2.0.3.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.9.0</version>
+			<type>jar</type>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
