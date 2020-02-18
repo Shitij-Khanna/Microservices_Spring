@@ -3,6 +3,12 @@ package com.appsdeveloperblog.api.books.configuration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * @author nlshikha
+ * @ConfigurationProperties would read the properties with prefix , and add the
+ *                          field name to it, like rabbitmq.queueName, and the
+ *                          property is set via the getter and setter methods
+ */
 @Configuration
 @ConfigurationProperties(prefix = "rabbitmq")
 public class AMQPProperties {

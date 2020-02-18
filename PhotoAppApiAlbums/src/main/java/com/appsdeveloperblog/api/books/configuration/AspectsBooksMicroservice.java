@@ -7,6 +7,8 @@ import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
 import org.springframework.stereotype.Component;
 
 import com.appsdeveloperblog.api.books.io.controllers.BookController;
@@ -15,6 +17,7 @@ import com.appsdeveloperblog.api.books.io.controllers.BookController;
 @Component
 public class AspectsBooksMicroservice {
 
+	private static final Logger log = LoggerFactory.getLogger(AspectsBooksMicroservice.class);
 	// Commented the @before and @after notations for the methods down below because
 	// we do not want to call all these methods from various cases. They are just
 	// for reference and show different possibilities
@@ -66,6 +69,8 @@ public class AspectsBooksMicroservice {
 	public void before(JoinPoint joinPoint) {
 		System.out.print("AOP advice --  Method invocation started : " + joinPoint.getSignature().getName() + "-");
 		System.out.println("Arguments : " + Arrays.toString(joinPoint.getArgs()));
+		log.info("AOP advice --  Method invocation started : {0} with arguments {1}",
+				joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs()));
 	}
 
 	// This aspect is added to add debug logging after execution of every method on
@@ -74,6 +79,9 @@ public class AspectsBooksMicroservice {
 	public void after(JoinPoint joinPoint) {
 		System.out.print("AOP advice --  Method execution finished: " + joinPoint.getSignature().getName() + "-");
 		System.out.println("Arguments : " + Arrays.toString(joinPoint.getArgs()));
+		log.info("AOP advice --  Method invocation finished : {0} with arguments {1}",
+				joinPoint.getSignature().getName(), Arrays.toString(joinPoint.getArgs()));
+		// debug log not working
 	}
 
 	// This aspect is added to add debug logging to show what has been returned
@@ -86,8 +94,10 @@ public class AspectsBooksMicroservice {
 	public void afterReturning(JoinPoint joinPoint, Object result) {
 		System.out.println("Result is : " + result);
 //		System.out.println("JoinPoint" + joinPoint.getTarget()); 
-		BookController controller = (BookController) joinPoint.getTarget();
-		controller.getBooks(); // gettarget will get the target which we can use to perform other actions
+//		BookController controller = (BookController) joinPoint.getTarget();
+//		controller.getBooks(); // gettarget will get the target which we can use to perform other actions
+		log.info("AOP advice --  Method invocation for {0} returned result  : {1} ",
+				joinPoint.getSignature().getName(), result);
 	}
 
 	// This aspect is added to add debug log for invocation of every method on
