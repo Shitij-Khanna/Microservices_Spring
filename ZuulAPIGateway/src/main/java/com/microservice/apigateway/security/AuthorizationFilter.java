@@ -17,6 +17,7 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 import io.jsonwebtoken.Jwts;
 
 public class AuthorizationFilter extends BasicAuthenticationFilter {
+
     
 	Environment environment;
 
@@ -68,4 +69,5 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
          return new UsernamePasswordAuthenticationToken(userId, null, new ArrayList<>());
 
      }
+
 }

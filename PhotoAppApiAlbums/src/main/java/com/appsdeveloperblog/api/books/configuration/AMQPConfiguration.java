@@ -59,11 +59,19 @@ public class AMQPConfiguration {
 		return container;
 	}
 
+	/**
+	 * @return This converter is used to be able to send and receive json messages
+	 */
 	@Bean
 	public MappingJackson2MessageConverter consumerJackson2MessageConverter() {
 		return new MappingJackson2MessageConverter();
 	}
 
+	/**
+	 * @param listener
+	 * @return the method 'listen' is the name of the method which will be invoked
+	 *         to listen to messages when messages are received
+	 */
 	@Bean
 	MessageListenerAdapter listenerAdapter(PracticalTipListener listener) {
 		return new MessageListenerAdapter(listener, "listen");
