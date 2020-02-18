@@ -58,6 +58,7 @@ public class BooksServiceImpl implements BooksService {
 		List<Book> books = booksFromCache.values().stream().collect(Collectors.toList());
 		if (!books.isEmpty()) {
 			bookRepository.findAll();
+			// update the newly found list in redis cache
 		}
 		for (Book book : books) {
 			if (book.getPrice() == null) {
