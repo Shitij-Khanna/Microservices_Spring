@@ -1,0 +1,117 @@
+pipeline {
+   
+ parameters {
+ 
+		booleanParam(name: 'RunJunit', defaultValue: false, description: 'Run testcases')
+ 
+        booleanParam(name: 'DeployEureka', defaultValue: false, description: 'Build/Deploy Eureka')
+
+        booleanParam(name: 'DeployConfigserver', defaultValue: false, description: 'Build/Deploy Config server')
+
+        booleanParam(name: 'DeployZuul', defaultValue: false, description: 'Build/Deploy Zuul api gateway server')
+
+        booleanParam(name: 'DeployUsers', defaultValue: false, description: 'Build/Deploy Users service')
+
+        booleanParam(name: 'DeployBooks', defaultValue: false, description: 'Build/Deploy Books service')
+    }
+    
+    agent any
+   
+    environment {
+    runJunit = "${params.RunJunit}"
+	//ENV_NAME = "${env.BRANCH_NAME}"
+	deployEureka = "${params.DeployEureka}"
+	deployConfig = "${params.DeployConfigserver}"
+	deployZuul = "${params.DeployZuul}"
+	deployUsers = "${params.DeployUsers}"
+	deployBooks = "${params.DeployBooks}"
+   }
+    
+
+   stages { 
+
+	     stage('Checkout') {
+         steps {
+		 script {
+			echo 'Started checkout'
+            checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Shitij-Khanna/Microservices_Spring']]])	
+				}
+			}
+		}	
+		
+       stage('Run Junit Eureka') {
+         steps {
+		 script {
+				if (runJunit == "true") {
+					echo "Running Test cases"
+			  
+					}
+				}
+			}
+		}
+		
+	   stage('Deploy Eureka') {
+         steps {
+		 script {
+				if (deployEureka == "true") {
+					echo "Deploying Eureka discovery server"
+					 bat """
+					cd DiscoveryService
+					docker run -d -p 8010:8010 --network microservicenetwork --name eurekaserver shitijkhanna/discoveryservice
+					""".stripIndent().trim() 
+					}
+				}
+			}
+		}
+		
+		 stage('Deploy Config server') {
+         steps {
+		 script {
+				if (deployConfig == "true") {
+					echo "Deploying Config server"
+			  
+					}
+				}
+			}
+		}
+		
+		 stage('Deploy Zuul Api gateway') {
+         steps {
+		 script {
+				if (deployZuul == "true") {
+					echo "Deploying Zuul Api gateway"
+					 bat """
+					cd ZuulAPIGateway
+					docker run -d --name apigateway --network microservicenetwork -e "eureka.client.serviceUrl.defaultZone=http://eurekaserver:8010/eureka" -p 8011:8011 shitijkhanna/sks-zuul-api-gateway:v2
+					""".stripIndent().trim() 
+					}
+				}
+			}
+		}
+		
+		 stage('Deploy users microservice') {
+         steps {
+		 script {
+				if (deployUsers == "true") {
+					echo "Deploying Users microservice"
+					bat """
+					cd ZuulAPIGateway
+					docker run -d --network microservicenetwork --name userservice -e "eureka.client.serviceUrl.defaultZone=http://eurekaserver:8010/eureka" shitijkhanna/sks-users-ws
+					""".stripIndent().trim()
+					}
+				}
+			}
+		}
+		
+		 stage('Deploy Books microservice') {
+         steps {
+		 script {
+				if (deployBooks == "true") {
+					echo "Deploying Books microservice"
+			  
+					}
+				}
+			}
+		}
+	}
+}
