@@ -4,14 +4,18 @@ SOLID Principles
 
 Design Patterns (3-4 in each category (behavioural, creational and structural) with implementation )
 
-Sorting (quick and heap sort) and Searching(binary search) algos
+Sorting (quick and heap sort, others) and Searching(binary search) algos
 
-Core java
-java 8
-Concurrency package:
-Multi threading in details how to create ur own things like threadpool thread local, producer consumer problem using locks, wait notify or blocking queue
+-Core java
+-java 8
+-Concurrency package:
+-Multi threading in details how to create ur own things like threadpool thread local, producer consumer problem using locks, wait notify or blocking queue
 countdown latch , cyclic barrier, future condition, how to avoid deadlock
-Collections and concurrent collections. where and which collection to use, explain with project examples. internal implementation of all the collections
+-Collections and concurrent collections. where and which collection to use, explain with project examples. internal implementation of all the collections
+-Garbage Collection
+-Serialization
+
+Programs and logics
 
 JMS (rabbit mq or active mq or kafka)
 
