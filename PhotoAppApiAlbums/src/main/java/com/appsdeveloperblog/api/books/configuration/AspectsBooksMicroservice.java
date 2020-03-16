@@ -7,11 +7,10 @@ import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import org.slf4j.LoggerFactory;
+import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
-import com.appsdeveloperblog.api.books.io.controllers.BookController;
 
 @Aspect
 @Component
@@ -22,7 +21,7 @@ public class AspectsBooksMicroservice {
 	// we do not want to call all these methods from various cases. They are just
 	// for reference and show different possibilities
 
-//	@Pointcut("execution(* com.appsdeveloperblog.api.books.io.controllers.BookController.*(..))")
+	@Pointcut("execution(* com.appsdeveloperblog.api.books.io.controllers.BookController.*(..))")
 	public void allMethodsOfBooksController() {
 		// This method defines a pointcut with the name , which is the name of the
 		// method, i.e. allMethodsOfBooksController
@@ -65,7 +64,7 @@ public class AspectsBooksMicroservice {
 
 	// This aspect is added to add debug log for invocation of every method on
 	// BooksController
-	@Before("execution(* com.appsdeveloperblog.api.books.io.controllers.BookController.*(..))")
+	@Before("allMethodsOfBooksController()")
 	public void before(JoinPoint joinPoint) {
 		System.out.print("AOP advice --  Method invocation started : " + joinPoint.getSignature().getName() + "-");
 		System.out.println("Arguments : " + Arrays.toString(joinPoint.getArgs()));

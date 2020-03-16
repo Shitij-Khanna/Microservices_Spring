@@ -1,0 +1,744 @@
+2020-03-16 14:23:25.158  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-03-16 14:23:27.250  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2020-03-16 14:23:27.251  WARN [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-16 14:23:27.252  INFO [users-ws,,,] 21376 --- [restartedMain] com.microservice.users.UsersApplication  : No active profile set, falling back to default profiles: default
+2020-03-16 14:23:28.259  INFO [users-ws,,,] 21376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-16 14:23:28.339  INFO [users-ws,,,] 21376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70ms. Found 1 JPA repository interfaces.
+2020-03-16 14:23:28.838  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a6513eb-0073-32da-91d9-221e01e72d91
+2020-03-16 14:23:28.953  INFO [users-ws,,,] 21376 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-03-16 14:23:28.962  INFO [users-ws,,,] 21376 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-03-16 14:23:29.289  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.342  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.357  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.368  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.375  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.422  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.425  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:23:29.899  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-16 14:23:29.905  INFO [users-ws,,,] 21376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-16 14:23:29.905  INFO [users-ws,,,] 21376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-16 14:23:30.040  INFO [users-ws,,,] 21376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-16 14:23:30.041  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2771 ms
+2020-03-16 14:23:30.141  INFO [users-ws,,,] 21376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-16 14:23:30.291  INFO [users-ws,,,] 21376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-16 14:23:30.297  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/Users/nlshikha/test'
+2020-03-16 14:23:31.032  WARN [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7b61fb94}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-03-16 14:23:31.608  INFO [users-ws,,,] 21376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-16 14:23:31.728  INFO [users-ws,,,] 21376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-03-16 14:23:31.967  INFO [users-ws,,,] 21376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-16 14:23:32.157  INFO [users-ws,,,] 21376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-16 14:23:32.992  INFO [users-ws,,,] 21376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-16 14:23:32.999  INFO [users-ws,,,] 21376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-16 14:23:33.068  WARN [users-ws,,,] 21376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:23:33.953  WARN [users-ws,,,] 21376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:23:34.143  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-16 14:23:34.877  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a9ba644, org.springframework.security.web.context.SecurityContextPersistenceFilter@dcc171b, org.springframework.security.web.header.HeaderWriterFilter@14c2a6a8, org.springframework.security.web.authentication.logout.LogoutFilter@5c549cd4, com.microservice.users.security.AuthenticationFilter@584f7c4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bf2d4b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fac82da, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f69695d, org.springframework.security.web.session.SessionManagementFilter@30f3af, org.springframework.security.web.access.ExceptionTranslationFilter@7003c2df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@744e31b5]
+2020-03-16 14:23:34.916  INFO [users-ws,,,] 21376 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-03-16 14:23:34.948  WARN [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-16 14:23:34.948  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-16 14:23:34.951  WARN [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-16 14:23:34.952  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-16 14:23:35.185  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-16 14:23:37.829  WARN [users-ws,,,] 21376 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-03-16 14:23:39.019  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2020-03-16 14:23:39.034  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2020-03-16 14:23:39.099  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2020-03-16 14:23:39.105  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2020-03-16 14:23:39.147  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2020-03-16 14:23:39.180  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2020-03-16 14:23:39.184  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-16 14:23:39.185  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-03-16 14:23:39.185  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-03-16 14:23:39.891  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-03-16 14:23:41.899  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2020-03-16 14:23:41.899  WARN [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-16 14:23:42.019  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-03-16 14:23:42.069  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2ef620b6:0/SimpleConnection@6493719f [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52075]
+2020-03-16 14:23:42.079  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.marketingQueueName) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:23:42.079  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.financeQueueName) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:23:42.079  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.ITqueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:23:42.154  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2020-03-16 14:23:42.191  INFO [users-ws,,,] 21376 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA, bound to: springCloudBus
+2020-03-16 14:23:42.215  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA.errors' has 1 subscriber(s).
+2020-03-16 14:23:42.215  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA.errors' has 2 subscriber(s).
+2020-03-16 14:23:42.242  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA'
+2020-03-16 14:23:42.244  INFO [users-ws,,,] 21376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-03-16 14:23:42.276  INFO [users-ws,,,] 21376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-03-16 14:23:42.323  INFO [users-ws,,,] 21376 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-03-16 14:23:42.511  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52080 (http) with context path ''
+2020-03-16 14:23:42.512  INFO [users-ws,89f1f5ec15190b93,89f1f5ec15190b93,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:23:42.513  INFO [users-ws,,,] 21376 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52080
+2020-03-16 14:23:42.514  INFO [users-ws,89f1f5ec15190b93,89f1f5ec15190b93,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:42.514  INFO [users-ws,89f1f5ec15190b93,89f1f5ec15190b93,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:42.514  INFO [users-ws,89f1f5ec15190b93,89f1f5ec15190b93,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:23:42.518  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-16 14:23:42.552  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-16 14:23:43.046  WARN [users-ws,,,] 21376 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7b61fb94}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-03-16 14:23:43.056  WARN [users-ws,,,] 21376 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7b61fb94}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 5 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.11.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) [zipkin-reporter-2.11.0.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_162]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 9 common frames omitted
+
+2020-03-16 14:23:43.152  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-16 14:23:43.152  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-16 14:23:43.249  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-16 14:23:43.250  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-16 14:23:43.406  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-16 14:23:43.811  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-16 14:23:43.811  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-16 14:23:43.811  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-16 14:23:43.812  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-16 14:23:43.812  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-16 14:23:43.812  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-16 14:23:43.812  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-16 14:23:43.905  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-16 14:23:43.907  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-16 14:23:43.909  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-16 14:23:43.912  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1584365023911 with initial instances count: 1
+2020-03-16 14:23:43.919  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-03-16 14:23:43.920  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584365023920, current=UP, previous=STARTING]
+2020-03-16 14:23:43.921  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:780ec181e0b52b4712614d87b5e01f74: registering service...
+2020-03-16 14:23:43.945  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:780ec181e0b52b4712614d87b5e01f74 - registration status: 204
+2020-03-16 14:23:44.617  INFO [users-ws,,,] 21376 --- [restartedMain] com.microservice.users.UsersApplication  : Started UsersApplication in 21.388 seconds (JVM running for 22.649)
+2020-03-16 14:23:45.516  INFO [users-ws,18be28b744bda237,18be28b744bda237,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:23:45.516  INFO [users-ws,18be28b744bda237,18be28b744bda237,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:45.516  INFO [users-ws,18be28b744bda237,18be28b744bda237,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:45.516  INFO [users-ws,18be28b744bda237,18be28b744bda237,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:23:48.519  INFO [users-ws,b616cf8b2861a660,b616cf8b2861a660,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:23:48.520  INFO [users-ws,b616cf8b2861a660,b616cf8b2861a660,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:48.521  INFO [users-ws,b616cf8b2861a660,b616cf8b2861a660,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:48.522  INFO [users-ws,b616cf8b2861a660,b616cf8b2861a660,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:23:51.524  INFO [users-ws,1d4d57f651538b55,1d4d57f651538b55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:23:51.524  INFO [users-ws,1d4d57f651538b55,1d4d57f651538b55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:51.525  INFO [users-ws,1d4d57f651538b55,1d4d57f651538b55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:51.526  INFO [users-ws,1d4d57f651538b55,1d4d57f651538b55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:23:54.528  INFO [users-ws,4f62d869626eecb3,4f62d869626eecb3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:23:54.528  INFO [users-ws,4f62d869626eecb3,4f62d869626eecb3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:54.529  INFO [users-ws,4f62d869626eecb3,4f62d869626eecb3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:54.529  INFO [users-ws,4f62d869626eecb3,4f62d869626eecb3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:23:57.531  INFO [users-ws,8fe19a0737f7b16e,8fe19a0737f7b16e,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:23:57.532  INFO [users-ws,8fe19a0737f7b16e,8fe19a0737f7b16e,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:57.532  INFO [users-ws,8fe19a0737f7b16e,8fe19a0737f7b16e,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:23:57.533  INFO [users-ws,8fe19a0737f7b16e,8fe19a0737f7b16e,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:00.535  INFO [users-ws,a92ad61181de3b52,a92ad61181de3b52,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:00.536  INFO [users-ws,a92ad61181de3b52,a92ad61181de3b52,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:00.537  INFO [users-ws,a92ad61181de3b52,a92ad61181de3b52,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:00.538  INFO [users-ws,a92ad61181de3b52,a92ad61181de3b52,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:03.538  INFO [users-ws,9fdfbd162a01fd0d,9fdfbd162a01fd0d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:03.539  INFO [users-ws,9fdfbd162a01fd0d,9fdfbd162a01fd0d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:03.539  INFO [users-ws,9fdfbd162a01fd0d,9fdfbd162a01fd0d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:03.540  INFO [users-ws,9fdfbd162a01fd0d,9fdfbd162a01fd0d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:06.541  INFO [users-ws,05faf8ac8a821358,05faf8ac8a821358,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:06.542  INFO [users-ws,05faf8ac8a821358,05faf8ac8a821358,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:06.542  INFO [users-ws,05faf8ac8a821358,05faf8ac8a821358,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:06.543  INFO [users-ws,05faf8ac8a821358,05faf8ac8a821358,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:09.544  INFO [users-ws,4efb90fb29545316,4efb90fb29545316,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:09.545  INFO [users-ws,4efb90fb29545316,4efb90fb29545316,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:09.545  INFO [users-ws,4efb90fb29545316,4efb90fb29545316,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:09.546  INFO [users-ws,4efb90fb29545316,4efb90fb29545316,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:12.547  INFO [users-ws,75bf9588da33f121,75bf9588da33f121,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:12.548  INFO [users-ws,75bf9588da33f121,75bf9588da33f121,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:12.548  INFO [users-ws,75bf9588da33f121,75bf9588da33f121,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:12.548  INFO [users-ws,75bf9588da33f121,75bf9588da33f121,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:15.549  INFO [users-ws,80f743ac5ea0c269,80f743ac5ea0c269,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:15.550  INFO [users-ws,80f743ac5ea0c269,80f743ac5ea0c269,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:15.551  INFO [users-ws,80f743ac5ea0c269,80f743ac5ea0c269,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:15.551  INFO [users-ws,80f743ac5ea0c269,80f743ac5ea0c269,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:18.400  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2020-03-16 14:24:18.400  WARN [users-ws,,,] 21376 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584365058400, current=DOWN, previous=UP]
+2020-03-16 14:24:18.401  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:780ec181e0b52b4712614d87b5e01f74: registering service...
+2020-03-16 14:24:18.407  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:780ec181e0b52b4712614d87b5e01f74 - registration status: 204
+2020-03-16 14:24:18.422  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-03-16 14:24:18.553  INFO [users-ws,5b151cb8bda872c4,5b151cb8bda872c4,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:18.553  INFO [users-ws,5b151cb8bda872c4,5b151cb8bda872c4,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:18.554  INFO [users-ws,5b151cb8bda872c4,5b151cb8bda872c4,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:18.554  INFO [users-ws,5b151cb8bda872c4,5b151cb8bda872c4,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:19.269  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-03-16 14:24:19.269  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA'
+2020-03-16 14:24:19.294  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA.errors
+2020-03-16 14:24:19.318  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA.errors' has 1 subscriber(s).
+2020-03-16 14:24:19.319  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.M1GOOZMVTtK6edFBOMapUA.errors' has 0 subscriber(s).
+2020-03-16 14:24:19.323  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-16 14:24:19.323  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-03-16 14:24:19.323  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2020-03-16 14:24:19.325  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-16 14:24:19.329  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-03-16 14:24:19.340  INFO [users-ws,,,] 21376 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-16 14:24:19.340  INFO [users-ws,,,] 21376 --- [Thread-3] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-03-16 14:24:20.351  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2020-03-16 14:24:20.352  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2020-03-16 14:24:20.352  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2020-03-16 14:24:20.352  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2020-03-16 14:24:20.352  INFO [users-ws,,,] 21376 --- [Thread-3] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+2020-03-16 14:24:20.352  INFO [users-ws,,,] 21376 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-03-16 14:24:23.353  INFO [users-ws,,,] 21376 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-03-16 14:24:23.362  INFO [users-ws,,,] 21376 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:780ec181e0b52b4712614d87b5e01f74 - deregister  status: 200
+2020-03-16 14:24:23.367  INFO [users-ws,,,] 21376 --- [Thread-3] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-03-16 14:24:23.368  INFO [users-ws,,,] 21376 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-16 14:24:23.389  INFO [users-ws,,,] 21376 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-16 14:24:25.304  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-03-16 14:24:27.323  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2020-03-16 14:24:27.323  WARN [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-16 14:24:27.324  INFO [users-ws,,,] 21376 --- [restartedMain] com.microservice.users.UsersApplication  : No active profile set, falling back to default profiles: default
+2020-03-16 14:24:27.765  INFO [users-ws,,,] 21376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-16 14:24:27.782  INFO [users-ws,,,] 21376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 1 JPA repository interfaces.
+2020-03-16 14:24:27.955  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a6513eb-0073-32da-91d9-221e01e72d91
+2020-03-16 14:24:27.967  INFO [users-ws,,,] 21376 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-03-16 14:24:27.969  INFO [users-ws,,,] 21376 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-03-16 14:24:27.999  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.014  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.019  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.025  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.027  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.047  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.049  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:24:28.355  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-16 14:24:28.356  INFO [users-ws,,,] 21376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-16 14:24:28.356  INFO [users-ws,,,] 21376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-16 14:24:28.383  INFO [users-ws,,,] 21376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-16 14:24:28.383  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1057 ms
+2020-03-16 14:24:28.435  INFO [users-ws,,,] 21376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-03-16 14:24:28.439  INFO [users-ws,,,] 21376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-03-16 14:24:28.439  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/Users/nlshikha/test'
+2020-03-16 14:24:29.108  WARN [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@39ec0ff6}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-03-16 14:24:29.219  INFO [users-ws,,,] 21376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-16 14:24:29.224  INFO [users-ws,,,] 21376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-16 14:24:29.251  INFO [users-ws,,,] 21376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-16 14:24:29.251  INFO [users-ws,,,] 21376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-16 14:24:29.285  WARN [users-ws,,,] 21376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:24:29.529  WARN [users-ws,,,] 21376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:24:29.669  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-16 14:24:30.131  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@346b9945, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c09cc97, org.springframework.security.web.header.HeaderWriterFilter@323f81ae, org.springframework.security.web.authentication.logout.LogoutFilter@4fa5a0c1, com.microservice.users.security.AuthenticationFilter@37d564ea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4f990c04, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49a1b3d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ff2a650, org.springframework.security.web.session.SessionManagementFilter@1a619330, org.springframework.security.web.access.ExceptionTranslationFilter@6d1186f1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e27ed79]
+2020-03-16 14:24:30.154  INFO [users-ws,,,] 21376 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-03-16 14:24:30.176  WARN [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-16 14:24:30.177  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-16 14:24:30.331  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-16 14:24:32.542  WARN [users-ws,,,] 21376 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-03-16 14:24:33.476  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2020-03-16 14:24:33.482  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2020-03-16 14:24:33.487  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2020-03-16 14:24:33.492  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2020-03-16 14:24:33.503  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2020-03-16 14:24:33.514  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2020-03-16 14:24:33.516  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-16 14:24:33.516  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-03-16 14:24:33.516  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-03-16 14:24:34.161  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-03-16 14:24:36.178  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2020-03-16 14:24:36.178  WARN [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-16 14:24:36.212  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-03-16 14:24:36.218  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1ac310d3:0/SimpleConnection@4c7b5c4e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52149]
+2020-03-16 14:24:36.220  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.marketingQueueName) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:24:36.220  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.financeQueueName) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:24:36.220  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.ITqueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:24:36.236  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2020-03-16 14:24:36.248  INFO [users-ws,,,] 21376 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg, bound to: springCloudBus
+2020-03-16 14:24:36.254  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg.errors' has 1 subscriber(s).
+2020-03-16 14:24:36.254  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg.errors' has 2 subscriber(s).
+2020-03-16 14:24:36.259  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg'
+2020-03-16 14:24:36.261  INFO [users-ws,,,] 21376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-03-16 14:24:36.261  INFO [users-ws,,,] 21376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-03-16 14:24:36.265  INFO [users-ws,,,] 21376 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-03-16 14:24:36.303  INFO [users-ws,e470e90a0900428d,e470e90a0900428d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:36.305  INFO [users-ws,e470e90a0900428d,e470e90a0900428d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:36.305  INFO [users-ws,e470e90a0900428d,e470e90a0900428d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:36.306  INFO [users-ws,e470e90a0900428d,e470e90a0900428d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:36.318  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52150 (http) with context path ''
+2020-03-16 14:24:36.319  INFO [users-ws,,,] 21376 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52150
+2020-03-16 14:24:36.320  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-16 14:24:36.325  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-16 14:24:36.327  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-16 14:24:36.327  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-16 14:24:36.328  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-16 14:24:36.328  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-16 14:24:36.373  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-16 14:24:36.374  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-16 14:24:36.377  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-16 14:24:36.378  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-16 14:24:36.378  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-16 14:24:36.379  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1584365076379 with initial instances count: 1
+2020-03-16 14:24:36.385  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-03-16 14:24:36.385  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584365076385, current=UP, previous=STARTING]
+2020-03-16 14:24:36.386  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:ca232aab4dc163da68993a2164f03c0d: registering service...
+2020-03-16 14:24:36.394  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:ca232aab4dc163da68993a2164f03c0d - registration status: 204
+2020-03-16 14:24:36.982  INFO [users-ws,,,] 21376 --- [restartedMain] com.microservice.users.UsersApplication  : Started UsersApplication in 13.004 seconds (JVM running for 75.014)
+2020-03-16 14:24:36.986  INFO [users-ws,,,] 21376 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-16 14:24:37.116  WARN [users-ws,,,] 21376 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@39ec0ff6}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-03-16 14:24:37.116  WARN [users-ws,,,] 21376 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@39ec0ff6}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 5 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.11.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) [zipkin-reporter-2.11.0.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_162]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 9 common frames omitted
+
+2020-03-16 14:24:39.307  INFO [users-ws,a68440c00837c1c2,a68440c00837c1c2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:39.308  INFO [users-ws,a68440c00837c1c2,a68440c00837c1c2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:39.309  INFO [users-ws,a68440c00837c1c2,a68440c00837c1c2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:39.309  INFO [users-ws,a68440c00837c1c2,a68440c00837c1c2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:42.314  INFO [users-ws,87833aa6295821b1,87833aa6295821b1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:42.316  INFO [users-ws,87833aa6295821b1,87833aa6295821b1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:42.318  INFO [users-ws,87833aa6295821b1,87833aa6295821b1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:42.319  INFO [users-ws,87833aa6295821b1,87833aa6295821b1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:45.323  INFO [users-ws,0b829e753cc4fe55,0b829e753cc4fe55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:45.324  INFO [users-ws,0b829e753cc4fe55,0b829e753cc4fe55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:45.325  INFO [users-ws,0b829e753cc4fe55,0b829e753cc4fe55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:45.327  INFO [users-ws,0b829e753cc4fe55,0b829e753cc4fe55,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:48.328  INFO [users-ws,ba273c0e5c165a03,ba273c0e5c165a03,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:48.329  INFO [users-ws,ba273c0e5c165a03,ba273c0e5c165a03,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:48.330  INFO [users-ws,ba273c0e5c165a03,ba273c0e5c165a03,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:48.330  INFO [users-ws,ba273c0e5c165a03,ba273c0e5c165a03,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:51.331  INFO [users-ws,d91c0e9641158c28,d91c0e9641158c28,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:51.332  INFO [users-ws,d91c0e9641158c28,d91c0e9641158c28,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:51.332  INFO [users-ws,d91c0e9641158c28,d91c0e9641158c28,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:51.332  INFO [users-ws,d91c0e9641158c28,d91c0e9641158c28,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:54.333  INFO [users-ws,de3391687380470c,de3391687380470c,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:54.334  INFO [users-ws,de3391687380470c,de3391687380470c,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:54.334  INFO [users-ws,de3391687380470c,de3391687380470c,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:54.334  INFO [users-ws,de3391687380470c,de3391687380470c,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:24:57.336  INFO [users-ws,a2317cb53a966139,a2317cb53a966139,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:24:57.337  INFO [users-ws,a2317cb53a966139,a2317cb53a966139,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:24:57.337  INFO [users-ws,a2317cb53a966139,a2317cb53a966139,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:24:57.337  INFO [users-ws,a2317cb53a966139,a2317cb53a966139,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:00.338  INFO [users-ws,cf3ff47b4d982afc,cf3ff47b4d982afc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:00.339  INFO [users-ws,cf3ff47b4d982afc,cf3ff47b4d982afc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:00.340  INFO [users-ws,cf3ff47b4d982afc,cf3ff47b4d982afc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:00.340  INFO [users-ws,cf3ff47b4d982afc,cf3ff47b4d982afc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:03.343  INFO [users-ws,102d6cb766da8bbb,102d6cb766da8bbb,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:03.344  INFO [users-ws,102d6cb766da8bbb,102d6cb766da8bbb,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:03.345  INFO [users-ws,102d6cb766da8bbb,102d6cb766da8bbb,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:03.345  INFO [users-ws,102d6cb766da8bbb,102d6cb766da8bbb,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:06.346  INFO [users-ws,8f0d4f56867b0b1b,8f0d4f56867b0b1b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:06.347  INFO [users-ws,8f0d4f56867b0b1b,8f0d4f56867b0b1b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:06.347  INFO [users-ws,8f0d4f56867b0b1b,8f0d4f56867b0b1b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:06.348  INFO [users-ws,8f0d4f56867b0b1b,8f0d4f56867b0b1b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:09.349  INFO [users-ws,977a6adcc5186562,977a6adcc5186562,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:09.350  INFO [users-ws,977a6adcc5186562,977a6adcc5186562,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:09.351  INFO [users-ws,977a6adcc5186562,977a6adcc5186562,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:09.351  INFO [users-ws,977a6adcc5186562,977a6adcc5186562,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:12.352  INFO [users-ws,1ca9218862b92629,1ca9218862b92629,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:12.353  INFO [users-ws,1ca9218862b92629,1ca9218862b92629,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:12.353  INFO [users-ws,1ca9218862b92629,1ca9218862b92629,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:12.354  INFO [users-ws,1ca9218862b92629,1ca9218862b92629,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:15.356  INFO [users-ws,e190c74c3991db2b,e190c74c3991db2b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:15.356  INFO [users-ws,e190c74c3991db2b,e190c74c3991db2b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:15.357  INFO [users-ws,e190c74c3991db2b,e190c74c3991db2b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:15.357  INFO [users-ws,e190c74c3991db2b,e190c74c3991db2b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:18.360  INFO [users-ws,cc8c7e9e30e32266,cc8c7e9e30e32266,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:18.361  INFO [users-ws,cc8c7e9e30e32266,cc8c7e9e30e32266,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:18.362  INFO [users-ws,cc8c7e9e30e32266,cc8c7e9e30e32266,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:18.362  INFO [users-ws,cc8c7e9e30e32266,cc8c7e9e30e32266,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:21.364  INFO [users-ws,c7454102a17ecdcc,c7454102a17ecdcc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:21.365  INFO [users-ws,c7454102a17ecdcc,c7454102a17ecdcc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:21.365  INFO [users-ws,c7454102a17ecdcc,c7454102a17ecdcc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:21.366  INFO [users-ws,c7454102a17ecdcc,c7454102a17ecdcc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:24.367  INFO [users-ws,1b0cafb8fb5d8c40,1b0cafb8fb5d8c40,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:24.368  INFO [users-ws,1b0cafb8fb5d8c40,1b0cafb8fb5d8c40,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:24.368  INFO [users-ws,1b0cafb8fb5d8c40,1b0cafb8fb5d8c40,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:24.368  INFO [users-ws,1b0cafb8fb5d8c40,1b0cafb8fb5d8c40,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:27.370  INFO [users-ws,c437596ce0c5d7b7,c437596ce0c5d7b7,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:27.371  INFO [users-ws,c437596ce0c5d7b7,c437596ce0c5d7b7,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:27.372  INFO [users-ws,c437596ce0c5d7b7,c437596ce0c5d7b7,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:27.373  INFO [users-ws,c437596ce0c5d7b7,c437596ce0c5d7b7,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:30.376  INFO [users-ws,e021c4b772783f01,e021c4b772783f01,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:30.377  INFO [users-ws,e021c4b772783f01,e021c4b772783f01,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:30.378  INFO [users-ws,e021c4b772783f01,e021c4b772783f01,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:30.379  INFO [users-ws,e021c4b772783f01,e021c4b772783f01,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:33.380  INFO [users-ws,f2b09163cddc0910,f2b09163cddc0910,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:33.381  INFO [users-ws,f2b09163cddc0910,f2b09163cddc0910,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:33.382  INFO [users-ws,f2b09163cddc0910,f2b09163cddc0910,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:33.382  INFO [users-ws,f2b09163cddc0910,f2b09163cddc0910,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:36.385  INFO [users-ws,13382cd80bba3a88,13382cd80bba3a88,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:36.386  INFO [users-ws,13382cd80bba3a88,13382cd80bba3a88,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:36.386  INFO [users-ws,13382cd80bba3a88,13382cd80bba3a88,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:36.387  INFO [users-ws,13382cd80bba3a88,13382cd80bba3a88,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:39.390  INFO [users-ws,a36c7f812ec3ebaf,a36c7f812ec3ebaf,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:39.391  INFO [users-ws,a36c7f812ec3ebaf,a36c7f812ec3ebaf,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:39.392  INFO [users-ws,a36c7f812ec3ebaf,a36c7f812ec3ebaf,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:39.393  INFO [users-ws,a36c7f812ec3ebaf,a36c7f812ec3ebaf,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:42.394  INFO [users-ws,dbd4870ef0980db0,dbd4870ef0980db0,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:42.395  INFO [users-ws,dbd4870ef0980db0,dbd4870ef0980db0,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:42.395  INFO [users-ws,dbd4870ef0980db0,dbd4870ef0980db0,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:42.396  INFO [users-ws,dbd4870ef0980db0,dbd4870ef0980db0,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:45.397  INFO [users-ws,91be2a72d209fbb1,91be2a72d209fbb1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:45.398  INFO [users-ws,91be2a72d209fbb1,91be2a72d209fbb1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:45.398  INFO [users-ws,91be2a72d209fbb1,91be2a72d209fbb1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:45.398  INFO [users-ws,91be2a72d209fbb1,91be2a72d209fbb1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:48.400  INFO [users-ws,405ccdf5c4f5c646,405ccdf5c4f5c646,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:48.401  INFO [users-ws,405ccdf5c4f5c646,405ccdf5c4f5c646,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:48.401  INFO [users-ws,405ccdf5c4f5c646,405ccdf5c4f5c646,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:48.402  INFO [users-ws,405ccdf5c4f5c646,405ccdf5c4f5c646,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:51.403  INFO [users-ws,f3fe4e3b0532326f,f3fe4e3b0532326f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:51.404  INFO [users-ws,f3fe4e3b0532326f,f3fe4e3b0532326f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:51.404  INFO [users-ws,f3fe4e3b0532326f,f3fe4e3b0532326f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:51.405  INFO [users-ws,f3fe4e3b0532326f,f3fe4e3b0532326f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:54.407  INFO [users-ws,0a01953ed1d9a7ed,0a01953ed1d9a7ed,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:54.407  INFO [users-ws,0a01953ed1d9a7ed,0a01953ed1d9a7ed,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:54.408  INFO [users-ws,0a01953ed1d9a7ed,0a01953ed1d9a7ed,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:54.408  INFO [users-ws,0a01953ed1d9a7ed,0a01953ed1d9a7ed,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:25:57.410  INFO [users-ws,4cc4a9fffad316f3,4cc4a9fffad316f3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:25:57.410  INFO [users-ws,4cc4a9fffad316f3,4cc4a9fffad316f3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:25:57.411  INFO [users-ws,4cc4a9fffad316f3,4cc4a9fffad316f3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:25:57.411  INFO [users-ws,4cc4a9fffad316f3,4cc4a9fffad316f3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:00.413  INFO [users-ws,89200a6ba651eed3,89200a6ba651eed3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:00.414  INFO [users-ws,89200a6ba651eed3,89200a6ba651eed3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:00.414  INFO [users-ws,89200a6ba651eed3,89200a6ba651eed3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:00.415  INFO [users-ws,89200a6ba651eed3,89200a6ba651eed3,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:03.416  INFO [users-ws,1b5d247587ebb177,1b5d247587ebb177,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:03.417  INFO [users-ws,1b5d247587ebb177,1b5d247587ebb177,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:03.418  INFO [users-ws,1b5d247587ebb177,1b5d247587ebb177,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:03.418  INFO [users-ws,1b5d247587ebb177,1b5d247587ebb177,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:06.420  INFO [users-ws,908483d20ef4fcef,908483d20ef4fcef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:06.421  INFO [users-ws,908483d20ef4fcef,908483d20ef4fcef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:06.421  INFO [users-ws,908483d20ef4fcef,908483d20ef4fcef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:06.422  INFO [users-ws,908483d20ef4fcef,908483d20ef4fcef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:09.424  INFO [users-ws,b79f6fb19476f002,b79f6fb19476f002,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:09.425  INFO [users-ws,b79f6fb19476f002,b79f6fb19476f002,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:09.425  INFO [users-ws,b79f6fb19476f002,b79f6fb19476f002,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:09.425  INFO [users-ws,b79f6fb19476f002,b79f6fb19476f002,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:12.428  INFO [users-ws,7b47bfacdd45f431,7b47bfacdd45f431,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:12.428  INFO [users-ws,7b47bfacdd45f431,7b47bfacdd45f431,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:12.429  INFO [users-ws,7b47bfacdd45f431,7b47bfacdd45f431,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:12.429  INFO [users-ws,7b47bfacdd45f431,7b47bfacdd45f431,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:15.430  INFO [users-ws,3379301ec37c8042,3379301ec37c8042,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:15.431  INFO [users-ws,3379301ec37c8042,3379301ec37c8042,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:15.431  INFO [users-ws,3379301ec37c8042,3379301ec37c8042,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:15.431  INFO [users-ws,3379301ec37c8042,3379301ec37c8042,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:18.437  INFO [users-ws,8bc3702b1c35ced2,8bc3702b1c35ced2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:18.437  INFO [users-ws,8bc3702b1c35ced2,8bc3702b1c35ced2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:18.442  INFO [users-ws,8bc3702b1c35ced2,8bc3702b1c35ced2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:18.442  INFO [users-ws,8bc3702b1c35ced2,8bc3702b1c35ced2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:19.976  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2020-03-16 14:26:19.976  WARN [users-ws,,,] 21376 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584365179976, current=DOWN, previous=UP]
+2020-03-16 14:26:19.976  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:ca232aab4dc163da68993a2164f03c0d: registering service...
+2020-03-16 14:26:19.981  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:ca232aab4dc163da68993a2164f03c0d - registration status: 204
+2020-03-16 14:26:19.994  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-03-16 14:26:20.325  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-03-16 14:26:20.325  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg'
+2020-03-16 14:26:20.346  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg.errors
+2020-03-16 14:26:20.353  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg.errors' has 1 subscriber(s).
+2020-03-16 14:26:20.353  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.7vuWz2QyQx-3Y3QHYztErg.errors' has 0 subscriber(s).
+2020-03-16 14:26:20.355  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-16 14:26:20.355  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-03-16 14:26:20.355  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2020-03-16 14:26:20.357  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-16 14:26:20.358  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-03-16 14:26:20.364  INFO [users-ws,,,] 21376 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-16 14:26:20.365  INFO [users-ws,,,] 21376 --- [Thread-13] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-03-16 14:26:21.371  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2020-03-16 14:26:21.371  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2020-03-16 14:26:21.371  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2020-03-16 14:26:21.372  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2020-03-16 14:26:21.372  INFO [users-ws,,,] 21376 --- [Thread-13] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+2020-03-16 14:26:21.373  INFO [users-ws,,,] 21376 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-03-16 14:26:24.375  INFO [users-ws,,,] 21376 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-03-16 14:26:24.381  INFO [users-ws,,,] 21376 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:ca232aab4dc163da68993a2164f03c0d - deregister  status: 200
+2020-03-16 14:26:24.389  INFO [users-ws,,,] 21376 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-03-16 14:26:24.389  INFO [users-ws,,,] 21376 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-03-16 14:26:24.410  INFO [users-ws,,,] 21376 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-03-16 14:26:26.480  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-03-16 14:26:28.496  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2020-03-16 14:26:28.496  WARN [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-16 14:26:28.496  INFO [users-ws,,,] 21376 --- [restartedMain] com.microservice.users.UsersApplication  : No active profile set, falling back to default profiles: default
+2020-03-16 14:26:28.955  INFO [users-ws,,,] 21376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-16 14:26:28.973  INFO [users-ws,,,] 21376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 1 JPA repository interfaces.
+2020-03-16 14:26:29.145  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a6513eb-0073-32da-91d9-221e01e72d91
+2020-03-16 14:26:29.155  INFO [users-ws,,,] 21376 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2020-03-16 14:26:29.157  INFO [users-ws,,,] 21376 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2020-03-16 14:26:29.182  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.196  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.203  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.208  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.210  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.229  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.232  INFO [users-ws,,,] 21376 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-16 14:26:29.530  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-03-16 14:26:29.530  INFO [users-ws,,,] 21376 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-16 14:26:29.530  INFO [users-ws,,,] 21376 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-03-16 14:26:29.557  INFO [users-ws,,,] 21376 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-16 14:26:29.557  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1058 ms
+2020-03-16 14:26:29.608  INFO [users-ws,,,] 21376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-03-16 14:26:29.613  INFO [users-ws,,,] 21376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-03-16 14:26:29.613  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:C:/Users/nlshikha/test'
+2020-03-16 14:26:30.322  WARN [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@95b9b4d}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out}]
+2020-03-16 14:26:30.442  INFO [users-ws,,,] 21376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-16 14:26:30.447  INFO [users-ws,,,] 21376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-03-16 14:26:30.477  INFO [users-ws,,,] 21376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-16 14:26:30.478  INFO [users-ws,,,] 21376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-16 14:26:30.513  WARN [users-ws,,,] 21376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-16 14:26:30.759  WARN [users-ws,,,] 21376 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-16 14:26:30.887  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-03-16 14:26:31.295  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@511a496, org.springframework.security.web.context.SecurityContextPersistenceFilter@36b2e332, org.springframework.security.web.header.HeaderWriterFilter@12a0707b, org.springframework.security.web.authentication.logout.LogoutFilter@497c3638, com.microservice.users.security.AuthenticationFilter@3b60e906, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f1582cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25211a2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@978726d, org.springframework.security.web.session.SessionManagementFilter@4dda46ad, org.springframework.security.web.access.ExceptionTranslationFilter@3151b194, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b2b9518]
+2020-03-16 14:26:31.315  INFO [users-ws,,,] 21376 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-03-16 14:26:31.332  WARN [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-03-16 14:26:31.333  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-16 14:26:31.478  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-16 14:26:33.759  WARN [users-ws,,,] 21376 --- [restartedMain] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-03-16 14:26:34.687  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2020-03-16 14:26:34.693  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2020-03-16 14:26:34.698  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2020-03-16 14:26:34.703  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2020-03-16 14:26:34.713  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2020-03-16 14:26:34.726  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2020-03-16 14:26:34.727  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-16 14:26:34.727  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2020-03-16 14:26:34.727  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2020-03-16 14:26:35.410  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-03-16 14:26:37.428  INFO [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8012. Will be trying the next url if available
+2020-03-16 14:26:37.428  WARN [users-ws,,,] 21376 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8012/users-ws/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2020-03-16 14:26:37.456  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-03-16 14:26:37.462  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1b99c41f:0/SimpleConnection@342d8e43 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52286]
+2020-03-16 14:26:37.464  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.marketingQueueName) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:26:37.464  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.financeQueueName) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:26:37.464  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (users.ITqueue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2020-03-16 14:26:37.479  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2020-03-16 14:26:37.491  INFO [users-ws,,,] 21376 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ, bound to: springCloudBus
+2020-03-16 14:26:37.497  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ.errors' has 1 subscriber(s).
+2020-03-16 14:26:37.497  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ.errors' has 2 subscriber(s).
+2020-03-16 14:26:37.502  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ'
+2020-03-16 14:26:37.502  INFO [users-ws,,,] 21376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-03-16 14:26:37.503  INFO [users-ws,,,] 21376 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-03-16 14:26:37.507  INFO [users-ws,,,] 21376 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-03-16 14:26:37.548  INFO [users-ws,2b99bb75478e9f70,2b99bb75478e9f70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:37.550  INFO [users-ws,2b99bb75478e9f70,2b99bb75478e9f70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:37.550  INFO [users-ws,2b99bb75478e9f70,2b99bb75478e9f70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:37.550  INFO [users-ws,2b99bb75478e9f70,2b99bb75478e9f70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:37.564  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52287 (http) with context path ''
+2020-03-16 14:26:37.565  INFO [users-ws,,,] 21376 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52287
+2020-03-16 14:26:37.566  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-03-16 14:26:37.569  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-03-16 14:26:37.574  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-03-16 14:26:37.575  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-03-16 14:26:37.575  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-03-16 14:26:37.575  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-03-16 14:26:37.620  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-03-16 14:26:37.620  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-03-16 14:26:37.620  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-03-16 14:26:37.620  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-03-16 14:26:37.620  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-03-16 14:26:37.620  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-03-16 14:26:37.621  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-03-16 14:26:37.621  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-03-16 14:26:37.624  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-03-16 14:26:37.625  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-03-16 14:26:37.625  INFO [users-ws,,,] 21376 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-03-16 14:26:37.626  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1584365197626 with initial instances count: 1
+2020-03-16 14:26:37.633  INFO [users-ws,,,] 21376 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-03-16 14:26:37.633  INFO [users-ws,,,] 21376 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584365197633, current=UP, previous=STARTING]
+2020-03-16 14:26:37.633  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:83f39ff2f386ff9f982c4adf70fd9405: registering service...
+2020-03-16 14:26:37.638  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:83f39ff2f386ff9f982c4adf70fd9405 - registration status: 204
+2020-03-16 14:26:38.248  INFO [users-ws,,,] 21376 --- [restartedMain] com.microservice.users.UsersApplication  : Started UsersApplication in 13.102 seconds (JVM running for 196.28)
+2020-03-16 14:26:38.250  INFO [users-ws,,,] 21376 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-16 14:26:38.328  WARN [users-ws,,,] 21376 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@95b9b4d}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-03-16 14:26:38.329  WARN [users-ws,,,] 21376 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@95b9b4d}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 5 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:751) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:644) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.1.RELEASE.jar:2.2.1.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.19.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:285) ~[zipkin-reporter-2.11.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:354) [zipkin-reporter-2.11.0.jar:na]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_162]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_162]
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_162]
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_162]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_162]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_162]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:742) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 9 common frames omitted
+
+2020-03-16 14:26:40.551  INFO [users-ws,1ef1b2d1033a37ef,1ef1b2d1033a37ef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:40.552  INFO [users-ws,1ef1b2d1033a37ef,1ef1b2d1033a37ef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:40.552  INFO [users-ws,1ef1b2d1033a37ef,1ef1b2d1033a37ef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:40.553  INFO [users-ws,1ef1b2d1033a37ef,1ef1b2d1033a37ef,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:43.554  INFO [users-ws,f95317ef53329f8d,f95317ef53329f8d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:43.554  INFO [users-ws,f95317ef53329f8d,f95317ef53329f8d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:43.555  INFO [users-ws,f95317ef53329f8d,f95317ef53329f8d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:43.555  INFO [users-ws,f95317ef53329f8d,f95317ef53329f8d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:46.558  INFO [users-ws,a489c58855e695bc,a489c58855e695bc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:46.559  INFO [users-ws,a489c58855e695bc,a489c58855e695bc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:46.560  INFO [users-ws,a489c58855e695bc,a489c58855e695bc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:46.561  INFO [users-ws,a489c58855e695bc,a489c58855e695bc,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:49.564  INFO [users-ws,1c23cddf67d64140,1c23cddf67d64140,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:49.564  INFO [users-ws,1c23cddf67d64140,1c23cddf67d64140,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:49.565  INFO [users-ws,1c23cddf67d64140,1c23cddf67d64140,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:49.565  INFO [users-ws,1c23cddf67d64140,1c23cddf67d64140,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:52.566  INFO [users-ws,7ac77cbb2be91161,7ac77cbb2be91161,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:52.566  INFO [users-ws,7ac77cbb2be91161,7ac77cbb2be91161,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:52.567  INFO [users-ws,7ac77cbb2be91161,7ac77cbb2be91161,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:52.569  INFO [users-ws,7ac77cbb2be91161,7ac77cbb2be91161,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:55.570  INFO [users-ws,8a40504455d46292,8a40504455d46292,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:55.571  INFO [users-ws,8a40504455d46292,8a40504455d46292,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:55.571  INFO [users-ws,8a40504455d46292,8a40504455d46292,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:55.572  INFO [users-ws,8a40504455d46292,8a40504455d46292,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:26:58.574  INFO [users-ws,585b5735d73f6f6d,585b5735d73f6f6d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:26:58.575  INFO [users-ws,585b5735d73f6f6d,585b5735d73f6f6d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:26:58.575  INFO [users-ws,585b5735d73f6f6d,585b5735d73f6f6d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:26:58.575  INFO [users-ws,585b5735d73f6f6d,585b5735d73f6f6d,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:01.576  INFO [users-ws,68fc9baa8e9cdcad,68fc9baa8e9cdcad,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:01.576  INFO [users-ws,68fc9baa8e9cdcad,68fc9baa8e9cdcad,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:01.577  INFO [users-ws,68fc9baa8e9cdcad,68fc9baa8e9cdcad,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:01.577  INFO [users-ws,68fc9baa8e9cdcad,68fc9baa8e9cdcad,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:04.578  INFO [users-ws,bc4754eb1fa05d99,bc4754eb1fa05d99,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:04.578  INFO [users-ws,bc4754eb1fa05d99,bc4754eb1fa05d99,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:04.579  INFO [users-ws,bc4754eb1fa05d99,bc4754eb1fa05d99,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:04.579  INFO [users-ws,bc4754eb1fa05d99,bc4754eb1fa05d99,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:07.581  INFO [users-ws,706facdb6af09a2a,706facdb6af09a2a,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:07.581  INFO [users-ws,706facdb6af09a2a,706facdb6af09a2a,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:07.582  INFO [users-ws,706facdb6af09a2a,706facdb6af09a2a,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:07.582  INFO [users-ws,706facdb6af09a2a,706facdb6af09a2a,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:10.583  INFO [users-ws,b2fd5502492bcb2f,b2fd5502492bcb2f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:10.583  INFO [users-ws,b2fd5502492bcb2f,b2fd5502492bcb2f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:10.584  INFO [users-ws,b2fd5502492bcb2f,b2fd5502492bcb2f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:10.584  INFO [users-ws,b2fd5502492bcb2f,b2fd5502492bcb2f,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:13.585  INFO [users-ws,1c9f177fb0e0a4f9,1c9f177fb0e0a4f9,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:13.586  INFO [users-ws,1c9f177fb0e0a4f9,1c9f177fb0e0a4f9,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:13.586  INFO [users-ws,1c9f177fb0e0a4f9,1c9f177fb0e0a4f9,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:13.587  INFO [users-ws,1c9f177fb0e0a4f9,1c9f177fb0e0a4f9,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:16.588  INFO [users-ws,dab00cbc65a758e1,dab00cbc65a758e1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:16.589  INFO [users-ws,dab00cbc65a758e1,dab00cbc65a758e1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:16.589  INFO [users-ws,dab00cbc65a758e1,dab00cbc65a758e1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:16.589  INFO [users-ws,dab00cbc65a758e1,dab00cbc65a758e1,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:19.591  INFO [users-ws,d16a63bd1c7aa058,d16a63bd1c7aa058,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:19.592  INFO [users-ws,d16a63bd1c7aa058,d16a63bd1c7aa058,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:19.593  INFO [users-ws,d16a63bd1c7aa058,d16a63bd1c7aa058,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:19.594  INFO [users-ws,d16a63bd1c7aa058,d16a63bd1c7aa058,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:22.596  INFO [users-ws,a12fa484fe035603,a12fa484fe035603,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:22.596  INFO [users-ws,a12fa484fe035603,a12fa484fe035603,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:22.597  INFO [users-ws,a12fa484fe035603,a12fa484fe035603,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:22.597  INFO [users-ws,a12fa484fe035603,a12fa484fe035603,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:25.600  INFO [users-ws,5013094213ec9c70,5013094213ec9c70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:25.601  INFO [users-ws,5013094213ec9c70,5013094213ec9c70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:25.601  INFO [users-ws,5013094213ec9c70,5013094213ec9c70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:25.601  INFO [users-ws,5013094213ec9c70,5013094213ec9c70,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:28.602  INFO [users-ws,f4d12eec19d74ed2,f4d12eec19d74ed2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:28.603  INFO [users-ws,f4d12eec19d74ed2,f4d12eec19d74ed2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:28.603  INFO [users-ws,f4d12eec19d74ed2,f4d12eec19d74ed2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:28.603  INFO [users-ws,f4d12eec19d74ed2,f4d12eec19d74ed2,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:31.606  INFO [users-ws,d3691a5b6ee515e6,d3691a5b6ee515e6,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:31.609  INFO [users-ws,d3691a5b6ee515e6,d3691a5b6ee515e6,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:31.611  INFO [users-ws,d3691a5b6ee515e6,d3691a5b6ee515e6,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:31.611  INFO [users-ws,d3691a5b6ee515e6,d3691a5b6ee515e6,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:34.612  INFO [users-ws,46666d832115d9fa,46666d832115d9fa,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:34.613  INFO [users-ws,46666d832115d9fa,46666d832115d9fa,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:34.613  INFO [users-ws,46666d832115d9fa,46666d832115d9fa,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:34.613  INFO [users-ws,46666d832115d9fa,46666d832115d9fa,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:37.615  INFO [users-ws,92b2587f3ee9d67b,92b2587f3ee9d67b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Practical email sent
+2020-03-16 14:27:37.615  INFO [users-ws,92b2587f3ee9d67b,92b2587f3ee9d67b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Finance message sent
+2020-03-16 14:27:37.616  INFO [users-ws,92b2587f3ee9d67b,92b2587f3ee9d67b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : Marketing message sent
+2020-03-16 14:27:37.616  INFO [users-ws,92b2587f3ee9d67b,92b2587f3ee9d67b,true] 21376 --- [scheduling-1] c.m.users.message.PracticalEmailSender   : IT message sent
+2020-03-16 14:27:38.167  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-16 14:27:38.168  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2020-03-16 14:27:38.168  WARN [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1584365258168, current=DOWN, previous=UP]
+2020-03-16 14:27:38.168  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:83f39ff2f386ff9f982c4adf70fd9405: registering service...
+2020-03-16 14:27:38.173  INFO [users-ws,,,] 21376 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:83f39ff2f386ff9f982c4adf70fd9405 - registration status: 204
+2020-03-16 14:27:38.252  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2020-03-16 14:27:38.542  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2020-03-16 14:27:38.542  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ'
+2020-03-16 14:27:38.558  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ.errors
+2020-03-16 14:27:38.567  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ.errors' has 1 subscriber(s).
+2020-03-16 14:27:38.567  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.2loYr91nTlq0zhQ7rM_toQ.errors' has 0 subscriber(s).
+2020-03-16 14:27:38.569  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2020-03-16 14:27:38.569  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2020-03-16 14:27:38.569  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2020-03-16 14:27:38.571  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-16 14:27:38.571  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-03-16 14:27:38.577  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-16 14:27:38.578  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-03-16 14:27:39.582  WARN [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] z.r.AsyncReporter$BoundedAsyncReporter   : Timed out waiting for in-flight spans to send
+2020-03-16 14:27:39.582  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2020-03-16 14:27:39.582  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2020-03-16 14:27:39.582  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2020-03-16 14:27:39.582  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2020-03-16 14:27:39.582  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+2020-03-16 14:27:39.583  INFO [users-ws,,,] 21376 --- [RMI TCP Connection(5)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...

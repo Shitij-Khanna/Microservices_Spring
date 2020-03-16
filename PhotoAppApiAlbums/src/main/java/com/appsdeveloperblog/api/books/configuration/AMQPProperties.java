@@ -14,17 +14,53 @@ import org.springframework.context.annotation.Configuration;
 public class AMQPProperties {
 
 	public String queueName;
+	
+	public String financeQueueName;
+	
+	public String  marketingQueueName;
+	
+	public String itQueueName;
 
 	public String exchangeName;
 
 	public String routingKey;
-
+	
+	public String financeRoutingKey;
+	
+	public String marketingRoutingKey;
+	
+	public String itRoutingKey;
+	
 	public String getQueueName() {
 		return queueName;
 	}
 
 	public void setQueueName(String queueName) {
 		this.queueName = queueName;
+	}
+
+	public String getFinanceQueueName() {
+		return financeQueueName;
+	}
+
+	public void setFinanceQueueName(String financeQueueName) {
+		this.financeQueueName = financeQueueName;
+	}
+
+	public String getMarketingQueueName() {
+		return marketingQueueName;
+	}
+
+	public void setMarketingQueueName(String marketingQueueName) {
+		this.marketingQueueName = marketingQueueName;
+	}
+
+	public String getItQueueName() {
+		return itQueueName;
+	}
+
+	public void setItQueueName(String itQueue) {
+		this.itQueueName = itQueue;
 	}
 
 	public String getExchangeName() {
@@ -41,5 +77,29 @@ public class AMQPProperties {
 
 	public void setRoutingKey(String routingKey) {
 		this.routingKey = routingKey;
+	}
+
+	public String getFinanceRoutingKey() {
+		return financeRoutingKey;
+	}
+
+	public void setFinanceRoutingKey(String financeRoutingKey) {
+		this.financeRoutingKey = financeRoutingKey;
+	}
+
+	public String getMarketingRoutingKey() {
+		return marketingRoutingKey;
+	}
+
+	public void setMarketingRoutingKey(String marketingRoutingKey) {
+		this.marketingRoutingKey = marketingRoutingKey;
+	}
+
+	public String getItRoutingKey() {
+		return itRoutingKey;
+	}
+
+	public void setItRoutingKey(String itRoutingKey) {
+		this.itRoutingKey = itRoutingKey;
 	}
 }

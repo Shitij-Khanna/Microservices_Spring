@@ -28,6 +28,20 @@ public class PracticalEmailSender {
 		PracticalTipMessage emailMessage = new PracticalTipMessage("Always use immutable classes in java", 1, false);
 		rabbitTemplate.convertAndSend(properties.getExchangeName(), properties.getRoutingKey(), emailMessage);
 		log.info("Practical email sent");
+		
+		PracticalTipMessage financeMessage = new PracticalTipMessage("This is a message for finance queue", 1, false);
+		rabbitTemplate.convertAndSend(properties.getExchangeName(), properties.getFinanceRoutingKey(), financeMessage);
+		log.info("Finance message sent");
+		
+		PracticalTipMessage marketingMessage = new PracticalTipMessage("This is a message for marketing queue", 1, false);
+		rabbitTemplate.convertAndSend(properties.getExchangeName(), properties.getMarketingRoutingKey(), marketingMessage);
+		log.info("Marketing message sent");
+
+		
+		PracticalTipMessage itMessage = new PracticalTipMessage("This is a message for IT queue", 1, false);
+		rabbitTemplate.convertAndSend(properties.getExchangeName(), properties.getItRoutingKey(), itMessage);
+		log.info("IT message sent");
+
 	}
 
 }

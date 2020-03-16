@@ -25,6 +25,10 @@ pipeline {
 	deployZuul = "${params.DeployZuul}"
 	deployUsers = "${params.DeployUsers}"
 	deployBooks = "${params.DeployBooks}"
+	
+	eurekaregistry = "shitijkhanna/discoveryservice"
+    registryCredential = 'dockerhub'
+    dockerImage = ''
    }
     
 
@@ -55,14 +59,19 @@ pipeline {
 		 script {
 				if (deployEureka == "true") {
 					echo "Deploying Eureka discovery server"
-					 bat """
-					cd DiscoveryService
-					docker run -d -p 8010:8010 --network microservicenetwork --name eurekaserver shitijkhanna/discoveryservice
-					""".stripIndent().trim() 
+					 bat """cd DiscoveryService""".stripIndent().trim() 
+					    
+						 withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
+						dockerImage = docker.build registry + ":$BUILD_NUMBER"
+						docker.withRegistry( '', registryCredential ) {
+						dockerImage.push()
+   }
+						}
+						
+						}
 					}
 				}
 			}
-		}
 		
 		 stage('Deploy Config server') {
          steps {

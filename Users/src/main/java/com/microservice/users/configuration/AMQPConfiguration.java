@@ -26,11 +26,42 @@ public class AMQPConfiguration {
 	public Queue defaultParsingQueue() {
 		return new Queue(amqpProperties.getQueueName());
 	}
+	
+	@Bean
+	Queue marketingQueue() {
+		return new Queue(amqpProperties.getMarketingQueueName(), false);
+	}
+
+	@Bean
+	Queue financeQueue() {
+		return new Queue(amqpProperties.getFinanceQueueName(), false);
+	}
+
+	@Bean
+	Queue ITQueue() {
+		return new Queue(amqpProperties.getItQueueName(), false);
+	}
 
 	@Bean
 	public Binding queueToExchangeBinding() {
 		return BindingBuilder.bind(defaultParsingQueue()).to(tipsExchange()).with(amqpProperties.getRoutingKey());
 	}
+	
+	@Bean
+	Binding marketingBinding() {
+		return BindingBuilder.bind(marketingQueue()).to(tipsExchange()).with(amqpProperties.getMarketingRoutingKey());
+	}
+	
+	@Bean
+	Binding financeBinding() {
+		return BindingBuilder.bind(financeQueue()).to(tipsExchange()).with(amqpProperties.getFinanceRoutingKey());
+	}
+	
+	@Bean
+	Binding ITBinding() {
+		return BindingBuilder.bind(ITQueue()).to(tipsExchange()).with(amqpProperties.getItRoutingKey());
+	}
+
 
 	@Bean
 	public Jackson2JsonMessageConverter producerMessageConverter() {
