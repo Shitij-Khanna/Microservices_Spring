@@ -23,7 +23,7 @@ public class PracticalEmailSender {
 		this.rabbitTemplate = rabbitTemplate;
 	}
 
-	@Scheduled(fixedDelay = 3000L)
+//	@Scheduled(fixedDelay = 3000L)
 	public void sendPracticalTip() {
 		PracticalTipMessage emailMessage = new PracticalTipMessage("Always use immutable classes in java", 1, false);
 		rabbitTemplate.convertAndSend(properties.getExchangeName(), properties.getRoutingKey(), emailMessage);

@@ -40,10 +40,11 @@ public class UsersController {
 
 	@GetMapping("/status/check")
 	public String status() {
-//		return "Working on port " + env.getProperty("local.server.port");
-		String test = booksClient.test();
-		System.out.println("Testing feign client : " );
-		return "Working" ;
+		return "Working on port " + env.getProperty("local.server.port")
+				+ env.getProperty("test.property.springcloudbus");
+//		String test = booksClient.test();
+//		System.out.println("Testing feign client : " );
+//		return "Working" ;
 	}
 
 	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, produces = {
